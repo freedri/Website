@@ -1,3 +1,103 @@
-body{
-    
+:root{
+    --gradient1: #ff00e5;
+    --gradient2: #0004ff;
+}
+
+@font-face {
+    font-family: Avalon; 
+    src: url('../fonts/Avalon-Book-webfont.woff');
+} 
+
+@font-face {
+    font-family: Avalon; 
+    font-weight: bold;
+    src: url('../fonts/Avalon-Bold-webfont.woff');
+} 
+
+a{
+    transition: 0.3s ease-in-out;
+    color: #ff0033;
+}
+
+a:hover{
+    transition: 0.3s ease-in-out;
+}
+
+html, body{
+    margin:0;
+    padding:0;
+    width:100%;
+    font-family: Avalon;
+    height:100%;
+    font-size: 14px;
+}
+
+#gradient-box{
+    height: auto;
+    width:100%;
+    position:fixed;
+    top:0;
+    bottom:0;
+    background: linear-gradient(-45deg, var(--gradient1),  var(--gradient1),  var(--gradient2), var(--gradient2));
+    background-size: 200% 200%;
+    animation: gradient 15s ease infinite;
+    -webkit-animation: gradientz 15s ease infinite;
+}
+
+
+.animate{
+    animation: slide-fade-in .8s 0.5s forwards;
+    opacity:0;
+}
+
+@keyframes slide-fade-in {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0,20px,0);
+        transform: translate3d(0,20px,0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translate(0,0,0);
+        transform: translate(0,0,0);
+    }
+}
+
+.avatar{
+    border: 6px solid white;
+    border-radius: 200px;
+    width:128px;
+    height:128px;
+}
+
+@keyframes gradient {
+    0% {
+    background-position: 0% 50%;
+    }
+    50% {
+    background-position: 100% 50%;
+    }
+    100% {
+    background-position: 0% 50%;
+    }
+}
+  
+@-webkit-keyframes gradientz {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#navbar a{
+    color: white;
+}
+
+#navbar a:hover{
+    color: #ff0033;
 }
