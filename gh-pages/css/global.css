@@ -101,3 +101,35 @@ html, body{
 #navbar a:hover{
     color: #ff0033;
 }
+
+#header-box{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.avatar{
+    margin-top: 50px;
+}
+
+.description{
+    max-width: 700px;
+    padding: 0px 10px;
+}
+
+#navbar{
+    text-transform: uppercase;
+}
+
+.navul{
+    padding-left:0px;
+}
+
+.navitem{
+    display:inline-block;
+    margin:10px;
+    background-color: black;
+    padding:10px;
+    font-weight: bold;
+    border-radius: 5px;
+}
