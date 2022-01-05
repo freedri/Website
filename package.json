@@ -1,0 +1,21 @@
+{
+  "name": "website-generator",
+  "version": "1.0.0",
+  "description": "website generator",
+  "main": "generator.js",
+  "scripts": {
+    "start": "node generator.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freedri/Website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/freedri/Website/issues"
+  },
+  "homepage": "https://github.com/freedri/Website#readme"
+}
