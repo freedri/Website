@@ -2,18 +2,6 @@
     --gradient1: #ff00e5;
     --gradient2: #0004ff;
 }
-
-@font-face {
-    font-family: Avalon; 
-    src: url('../fonts/Avalon-Book-webfont.woff');
-} 
-
-@font-face {
-    font-family: Avalon; 
-    font-weight: bold;
-    src: url('../fonts/Avalon-Bold-webfont.woff');
-} 
-
 a{
     transition: 0.3s ease-in-out;
     color: #ff0033;
@@ -23,11 +11,17 @@ a:hover{
     transition: 0.3s ease-in-out;
 }
 
+h1{
+    font-weight: bold;
+    font-size: 56px;
+    margin: 10px;
+}
+
 html, body{
     margin:0;
     padding:0;
     width:100%;
-    font-family: Avalon;
+    font-family: Arial, sans-serif;
     height:100%;
     font-size: 14px;
 }
@@ -108,13 +102,18 @@ html, body{
     color: white;
 }
 
+#header-box a{
+    color: white;
+    text-decoration: none;
+}
+
 .avatar{
     margin-top: 50px;
 }
 
 .description{
     max-width: 700px;
-    padding: 0px 10px;
+    padding: 10px 0px;
 }
 
 #navbar{
@@ -132,4 +131,94 @@ html, body{
     padding:10px;
     font-weight: bold;
     border-radius: 5px;
+}
+
+#container{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#content{
+    min-height:20px;
+    background-color: white;
+    border-radius: 5px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 700px;
+    padding:20px;
+    margin-bottom:20px;
+    font-size:15px;
+}
+
+.img-container{
+    float:left;
+    max-width:50%;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding:5px;
+    margin: 5px 10px 5px 5px;
+}
+
+.caption{
+    font-weight: bold;
+}
+
+.img-container img{
+    width:100%;
+    border-radius: 5px;
+}
+
+.discoball{
+    position: absolute;
+    width: 250px;
+    margin: 0px 10px;
+    text-align: center;
+    top:0;
+}
+
+.discobar{
+    width:3px;
+    height:400px;
+    background-color:#777;
+    display:inline-block;
+    margin-left:8px;
+    margin-bottom:-3px;
+}
+
+.left{
+    left:calc(-130px + (100% - 740px)/4);
+}
+
+.right{
+    right:calc(-130px + (100% - 740px)/4);
+}
+
+.discoball img{
+    width:100%;
+}
+
+footer{
+    position: relative;
+    width:100%;
+    bottom: 0;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-top: auto;
+}
+
+#page{
+    display: flex;
+    flex-direction: column;
+    min-height:100vh;
+}
+
+iframe{
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 142px;
 }
